@@ -1,0 +1,153 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body {
+  background-color: #f3f5fc;
+  align-content: space-around;
+  display: flex;
+  flex-direction:row ;
+  justify-content: space-between;
+  margin: 25px;
+  
+}
+main{
+  align-content: space-around;
+  display: flex;
+  flex-direction:row ;
+  height: 90vh;
+  justify-content: space-between;
+  margin: auto;
+  width: 90%;
+}
+
+.side{
+  width: 10%;
+}
+.icon{
+  width: 80px;
+}
+
+.input-section{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 40px;
+  width: 60%;
+}
+.toogle-buttons{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.output-section{
+  align-items: stretch;
+  background-color: white;
+  box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);  
+  border-radius: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 40px;
+  width: 30%;
+  text-align: center;
+}
+#input-text{
+  color: #0A3871;
+  font-size: 32px;
+  padding: 10px
+}
+#output-text{
+  font-size: 24px;
+}
+#input-text:focus{
+  border-radius: 32px;
+  
+}
+#input-text,#output-text{
+  height: 80%;
+  border: none;
+  background:none;
+  resize: none;
+}
+
+.preview{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.preview>img{
+  margin-bottom: 50px;
+}
+
+button{
+  background-color: #f3f5fc;
+  border-radius: 24px;
+  border: 1px solid #072b61;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: #072b61;
+}
+
+button.active{
+  background-color: #072b61;
+  color: white;
+}
+
+button.active:hover{
+    background-color: #093b87;
+}
+
+button:hover{
+  background-color: #e1e3ec;
+  cursor: pointer;
+}
+
+
+.toggle-buttons{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+
+.toggle-buttons>button{
+  width: 45%;
+  height: 67px
+}
+.output-section>button{
+  height: 67px
+}
+
+#input-text,#ouput-text{
+  width: 100%;
+}
+
+/*Responsive styles*/
+@media screen and (max-width: 800px) {
+  main{
+    flex-direction: column;
+  }
+  body{
+    flex-direction: column;
+  }
+  .input-section{
+    padding: 0;
+    width: 100%;
+    margin-bottom: 50px;
+    margin-top: 25px;
+  }
+  .output-section{
+    width: 80%;
+    margin: 0 auto;
+  }
+
+}
